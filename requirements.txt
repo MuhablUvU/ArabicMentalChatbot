@@ -4,3 +4,4 @@ tensorflow
 numpy
 pydantic
 scikit-learn
+nltk

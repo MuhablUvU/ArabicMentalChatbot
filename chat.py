@@ -313,3 +313,7 @@ async def get_history(user_id: str, limit: int = 10):
 @app.get("/health")
 async def health_check():
     return {"status": "healthy", "model_loaded": not isinstance(chatbot, DummyChatbot)}
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("chat:app", host="0.0.0.0", port=8000, reload=True)
